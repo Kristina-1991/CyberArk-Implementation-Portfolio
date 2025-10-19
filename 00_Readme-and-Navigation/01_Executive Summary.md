@@ -30,8 +30,10 @@ Implement **CyberArk PAM** under a **Zero Trust** model to secure privileged ide
 
 ## Scope (In/Out):
 
-**In Scope (this phase)**
+### **In Scope**
+
 **Objects/Accounts**
+
 Privileged accounts (human & non-human): admins, service/system, break-glass, selected IoT identities (pilot).
 
 **Systems & Targets**
@@ -65,7 +67,8 @@ Privileged accounts (human & non-human): admins, service/system, break-glass, se
   - de-provisioning <24h
   - Evidence: Pending Accounts & Job Monitor exports, PVWA approval logs, PSM recordings, SIEM dashboards
     
-  **Out of Scope (this phase)**
+### **Out of Scope**
+
 - Legacy platforms **without supported connector** (list in annex)
 - Full IoT fleet (**pilot subset only** covered)
 
