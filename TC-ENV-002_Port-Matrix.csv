@@ -1,0 +1,9 @@
+Target,Protocol,Port,Purpose,Notes
+Windows Server,RDP,3389,PSM proxy,From PSM to target
+Unix Server,SSH,22,PSM proxy,From PSM to target
+SQL Server,TCP,1433,CPM rotation/PSM,From CPM/PSM to DB
+Oracle DB,TCP,1521,CPM rotation/PSM,From CPM/PSM to DB
+PVWA <-> IDP,HTTPS,443,SSO (SAML/OIDC),Both directions if needed
+PVWA -> SIEM,Syslog/HTTPS,514/443,Log export,One of the two depending on design
+Vault/PVWA/CPM/PSM -> DNS,UDP,53,Name resolution,Outbound
+All components,NTP,123,Time sync,Mandatory for aligned timestamps
