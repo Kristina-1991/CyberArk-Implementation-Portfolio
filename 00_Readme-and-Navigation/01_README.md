@@ -11,7 +11,7 @@ FinClear is a Brussels-based post-trade organization which operates in a hybrid,
 -  and no session recording leading to outages, fraud, and compliance findings.
   
 ## Objective 
-Implement **CyberArk PAM** under a **Zero Trust** model to secure privileged identities (human & non-human), reduce operational risk, and demonstrate alignment with **ISO 27001, NIS2, GDPR, DORA**.
+Implement **CyberArk PAM** under a **Zero Trust** model to secure privileged identities (human & non-human), reduce operational risk, and demonstrate alignment with **ISO 27001, NIS2, GDPR** and **DORA**.
 
 ## Approach (two phases)
 **Phase 0 – Data Discovery & Reconciliation (BR-00):** build a reliable privileged-account inventory and data-quality baseline (AD/HR reconciliation, owners, onboarding waves).
@@ -29,14 +29,51 @@ Implement **CyberArk PAM** under a **Zero Trust** model to secure privileged ide
 - De-provisioning (<24h)
 
 ## Scope (In/Out):
-**In:** privileged accounts (human & non-human), priority critical systems (servers, DB, cloud), integrations (Workday, SailPoint, Entra/AD, IDP, SIEM). 
 
-**Out (Phase 1):** legacy out-of-connector, full IoT fleet (pilot subset).
+**In Scope (this phase)**
+**Objects/Accounts**
+Privileged accounts (human & non-human): admins, service/system, break-glass, selected IoT identities (pilot).
 
-## Key integrations.
-- SCIM/REST/CSV (HRIS→IGA→Dir/PAM)
-- LDAP/Graph (directory),
-- SAML/OIDC : for PVWA SSO/MFA, Syslog/API (PAM→SIEM), RDP/SSH/JDBC/API to targets.
+**Systems & Targets**
+- Servers: Windows & Unix (pre-prod, prod)
+- Databases: Oracle, SQL Server (pre-prod, prod)
+- Cloud: AWS, Azure (priority scopes)
+- Critical applications (subset agreed with owners)
+
+**Controls (BRs)** 
+ - **BR-01** Semi-automated onboarding (Discovery → Pending Accounts → Onboard; Safes, Platforms, Rotation)
+ - **BR-02** JIT approval (policy/SoD, dual approval, time-boxed elevation)
+ - **BR-03** Session recording via PSM; evidence export to SIEM
+
+**Integrations (protocols)**
+ - **Workday → SailPoint (IGA)**: **REST API / SCIM** (event/delta)
+ - **SailPoint → Entra/AD**: **SCIM / Microsoft Graph API / LDAP**
+ - **SailPoint → CyberArk**: **REST API**
+ - **IDP ↔ PVWA**: **SAML / OIDC** + MFA
+ - **CyberArk → Splunk (SIEM)**: **Syslog / HTTPS API**
+ - **CyberArk → Targets**: **RDP / SSH / JDBC / API** (per connector)
+
+**Automation (baseline)**
+  - Scheduled Discovery, onboarding rules, automatic rotation (CPM)
+  - API-driven updates from IGA to PAM (trigger/metadata)
+  - SIEM ingestion & dashboards
+- **Environments**
+  - Pre-production, Production
+- **KPIs & Evidence**
+  - (>90%) onboarded (Wave 1) 
+  - (<5%) orphan/shared • >90% sessions recorded/auditable
+  - de-provisioning <24h
+  - Evidence: Pending Accounts & Job Monitor exports, PVWA approval logs, PSM recordings, SIEM dashboards
+    
+  **Out of Scope (this phase)**
+- Legacy platforms **without supported connector** (list in annex)
+- Full IoT fleet (**pilot subset only** covered)
+
+**Deferred to Later Phases**
+- **Multi-cloud coverage extended to GCP**
+- **IGA recertification at scale** (enterprise campaigns)
+- **Advanced orchestration** (policy-as-code, end-to-end ITSM auto-closure, **SCIM out-bound from PAM**)
+
 
 ## Risk & Mitigation (highlights)
 - Orphans/shared → AD↔HR reconciliation & owner assignment
