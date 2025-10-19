@@ -1,0 +1,8 @@
+Fields expected:
+- timestamp (ISO8601), product=PAM, event=(session_start|approval_granted|session_end)
+- user, target, method (PSM), request_id, approver (if approval), policy, duration, status
+
+In production:
+- In Splunk/Elastic, we would create a field extraction (e.g., "pam_session_*")
+- A saved search would filter session_start/session_end and join by request_id
+- Dashboard: sessions over time, failed vs success, top targets/users
