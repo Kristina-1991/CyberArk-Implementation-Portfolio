@@ -26,7 +26,8 @@ Implement **CyberArk PAM** under a **Zero Trust** model to secure privileged ide
 - (>90%) onboarded (Wave 1)
 - (<5%) orphan/shared
 - (>90%) sessions recorded & auditable
-- De-provisioning (<24h)
+- De-provisioning (<2h)
+- Evidence: Pending Accounts & Job Monitor exports, PVWA approval logs, PSM recordings, SIEM dashboards
 
 ## Scope (In/Out):
 
@@ -59,14 +60,10 @@ Privileged accounts (human & non-human): admins, service/system, break-glass, se
   - Scheduled Discovery, onboarding rules, automatic rotation (CPM)
   - API-driven updates from IGA to PAM (trigger/metadata)
   - SIEM ingestion & dashboards
-- **Environments**
-  - Pre-production, Production
-- **KPIs & Evidence**
-  - (>90%) onboarded (Wave 1) 
-  - (<5%) orphan/shared • >90% sessions recorded/auditable
-  - de-provisioning <24h
-  - Evidence: Pending Accounts & Job Monitor exports, PVWA approval logs, PSM recordings, SIEM dashboards
     
+**Environments**
+  - Pre-production, Production
+        
 ### **Out of Scope**
 
 - Legacy platforms **without supported connector** (list in annex)
