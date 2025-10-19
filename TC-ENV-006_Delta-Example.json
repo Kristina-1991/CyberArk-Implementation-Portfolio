@@ -1,0 +1,13 @@
+{
+  "event": "attributeChange",
+  "source": "IGA",
+  "target": "PAM",
+  "employeeId": "E001",
+  "attributes": {
+    "isPrivileged": { "before": false, "after": true },
+    "department": { "before": "IT", "after": "Security" }
+  },
+  "effectiveDate": "2025-10-19T09:00:00Z",
+  "traceId": "TRC-8f25a1",
+  "note": "Promotion to PAM operator; triggers onboarding candidate"
+}
