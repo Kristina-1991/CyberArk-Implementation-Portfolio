@@ -1,0 +1,8 @@
+Target Type,Example,Connector/Method,Control Supported,Notes
+Windows Server,WIN-01,PSM-RDP + CPM Rotation,Session recording + Rotation,Supported in scope
+Unix Server,LINUX-01,PSM-SSH + CPM Rotation,Session recording + Rotation,Supported in scope
+Database,SQL Server,PSM-JDBC/TCP + CPM,Session recording + Rotation,Wave 2 scope
+Database,Oracle,PSM + CPM,Session recording + Rotation,Wave 2 scope
+Cloud,AWS (IAM),API/SDK + PSM (where applicable),JIT + Rotation (keys/roles),Wave 3 scope
+Cloud,Azure (RBAC),API/Graph + PSM (where applicable),JIT + Recording,Wave 3 scope
+Application,Critical App X,PSM/Proxy (app-specific),Recording/Approval,Subset only
