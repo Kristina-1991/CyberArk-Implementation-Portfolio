@@ -1,0 +1,11 @@
+SamAccountName,DisplayName,Enabled,LastLogonDate,Department,Title,EmployeeID,WhenCreated
+alice.admin,Alice Admin,True,2025-08-15,IT,SysAdmin,E001,2023-01-10
+bob.svc,Bob Service,True,2025-05-10,IT,Service Account,E002,2022-11-02
+carol.ops,Carol Ops,True,2024-12-01,Ops,Operator,E003,2021-07-22
+dave.dbadmin,Dave DBA,True,2025-07-20,IT,DBA,E004,2023-04-03
+eve.contractor,Eve Contractor,False,2024-03-01,IT,Contractor,E007,2022-05-18
+frank.iothub,Frank IoTHub,True,2025-01-15,Ops,IoT Service,E006,2024-02-10
+root.sharedadmin,Shared Admin,True,2023-06-01,IT,Generic Admin,,2020-09-09
+svc_backup,Backup Service,True,2024-10-10,IT,Service Account,,2021-12-12
+john.user,John User,True,2025-09-01,HR,Analyst,E008,2024-11-11
+mary.exec,Mary Exec,True,2025-09-20,Executive,CIO,E005,2023-03-03
