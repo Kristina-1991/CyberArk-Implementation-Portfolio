@@ -1,0 +1,7 @@
+account,owner_email,system,last_rights_review,risk_level,reason
+admin_shared_02,,AWS-RDS-01,2024-07-26,High,no owner
+admin_shared_04,,SQL-PROD-01,2024-10-24,High,no owner
+admin_shared_06,,APP-CRIT-X,2024-06-05,High,no owner
+tech_admin_04,,LINUX-PROD-05,2024-05-30,High,no owner
+ops_generic_07,,WIN-CORE-01,2024-08-18,High,no owner
+svc_legacy_08,,AZURE-VM-12,2024-04-25,High,no owner
