@@ -1,0 +1,8 @@
+account,category,owner_email,system,last_rights_review,days_since_review,risk_reason
+admin_shared_02,Generic/Orphan,,AWS-RDS-01,2024-07-26,248,>180 days + orphan
+admin_shared_04,Generic/Orphan,,SQL-PROD-01,2024-10-24,159,>150 days
+admin_shared_06,Generic/Orphan,,APP-CRIT-X,2024-06-05,299,>180 days + orphan
+adm-win-core-11,Critical (Servers),alice.admin@finclear.com,WIN-CORE-01,2024-07-04,270,>180 days
+cloud-gcp-gce-15,Cloud,bob.ops@finclear.com,GCP-GCE-05,2024-08-27,216,>180 days
+cloud-azure-vm-17,Cloud,frank.app@finclear.com,AZURE-VM-12,2024-06-18,286,>180 days
+adm-linux-prod-19,Critical (Servers),carol.sec@finclear.com,LINUX-PROD-05,2024-07-30,244,>180 days
