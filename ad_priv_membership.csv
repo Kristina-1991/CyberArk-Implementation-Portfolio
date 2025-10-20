@@ -1,0 +1,6 @@
+Group,SamAccountName,DisplayName,EmployeeID
+Domain Admins,alice.admin,Alice Admin,E001
+Administrators,dave.dbadmin,Dave DBA,E004
+Server Operators,carol.ops,Carol Ops,E003
+Backup Operators,svc_backup,Backup Service,
+Administrators,root.sharedadmin,Shared Admin,

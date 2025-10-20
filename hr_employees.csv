@@ -1,0 +1,8 @@
+EmployeeID,FirstName,LastName,Department,Status
+E001,Alice,Admin,IT,Active
+E002,Bob,Service,IT,Active
+E003,Chloe,Leroy,Ops,Terminated
+E004,Dave,DBA,IT,Active
+E005,Mary,Exec,Executive,Active
+E006,Frank,IoT,Ops,Active
+E008,John,User,HR,Active
