@@ -1,1 +1,22 @@
+account,category,owner_email,system,last_rights_review,risk_level,notes
+admin_shared_01,Generic/Orphan,alice.admin@finclear.com,WIN-CORE-01,2024-09-23,High,shared
+admin_shared_02,Generic/Orphan,,AWS-RDS-01,2024-07-26,High,orphan
+admin_shared_03,Generic/Orphan,carol.sec@finclear.com,AZURE-VM-12,2025-01-31,High,shared
+admin_shared_04,Generic/Orphan,,SQL-PROD-01,2024-10-24,High,orphan
+admin_shared_05,Generic/Orphan,dave.db@finclear.com,LINUX-PROD-05,2024-08-12,High,shared
+admin_shared_06,Generic/Orphan,,APP-CRIT-X,2024-06-05,High,orphan
+adm-win-core-07,Critical (Servers),bob.ops@finclear.com,WIN-CORE-01,2024-12-01,Medium,critical-server
+adm-sql-prod-08,Critical (Servers),dave.db@finclear.com,SQL-PROD-01,2024-11-16,Medium,critical-server
+adm-linux-prod-09,Critical (Servers),carol.sec@finclear.com,LINUX-PROD-05,2024-12-31,Medium,critical-server
+adm-app-critx-10,Critical (Servers),frank.app@finclear.com,APP-CRIT-X,2024-09-02,Medium,critical-server
+adm-win-core-11,Critical (Servers),alice.admin@finclear.com,WIN-CORE-01,2024-07-04,High,critical-server
+adm-sql-prod-12,Critical (Servers),dave.db@finclear.com,SQL-PROD-01,2025-02-15,Medium,critical-server
+cloud-aws-rds-13,Cloud,eve.cloud@finclear.com,AWS-RDS-01,2024-12-20,Medium,cloud
+cloud-azure-vm-14,Cloud,carol.sec@finclear.com,AZURE-VM-12,2024-10-10,Medium,cloud
+cloud-gcp-gce-15,Cloud,bob.ops@finclear.com,GCP-GCE-05,2024-08-27,High,cloud
+cloud-aws-ec2-16,Cloud,eve.cloud@finclear.com,AWS-EC2-27,2025-01-10,Medium,cloud
+cloud-azure-vm-17,Cloud,frank.app@finclear.com,AZURE-VM-12,2024-06-18,High,cloud
+cloud-aws-rds-18,Cloud,alice.admin@finclear.com,AWS-RDS-01,2024-11-05,Medium,cloud
+adm-linux-prod-19,Critical (Servers),carol.sec@finclear.com,LINUX-PROD-05,2024-07-30,High,critical-server
+cloud-gcp-gce-20,Cloud,eve.cloud@finclear.com,GCP-GCE-05,2024-09-28,Medium,cloud
 
