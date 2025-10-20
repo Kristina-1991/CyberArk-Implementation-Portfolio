@@ -1,0 +1,11 @@
+account,pattern,owner_email,system,last_rights_review,risk_level
+admin_shared_01,shared,alice.admin@finclear.com,WIN-CORE-01,2024-09-23,High
+admin_shared_02,orphan,,AWS-RDS-01,2024-07-26,High
+admin_shared_03,shared,carol.sec@finclear.com,AZURE-VM-12,2025-01-31,High
+admin_shared_04,orphan,,SQL-PROD-01,2024-10-24,High
+admin_shared_05,shared,dave.db@finclear.com,LINUX-PROD-05,2024-08-12,High
+admin_shared_06,orphan,,APP-CRIT-X,2024-06-05,High
+svc_batch_01,shared,frank.app@finclear.com,APP-CRIT-X,2024-07-20,High
+svc_etl_02,shared,dave.db@finclear.com,SQL-PROD-01,2024-08-15,High
+svc_report_03,shared,carol.sec@finclear.com,WIN-CORE-01,2024-09-10,High
+tech_admin_04,orphan,,LINUX-PROD-05,2024-05-30,High
