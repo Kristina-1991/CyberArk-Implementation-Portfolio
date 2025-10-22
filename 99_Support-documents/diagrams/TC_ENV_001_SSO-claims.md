@@ -1,6 +1,7 @@
 # TC-ENV-001 - IDP SSO (SAML/OIDC) to PVWA - Claim Mapping
 
-**Goal.** Document the SSO flow and the identity/authorization claims required by PVWA.
+## Purpose
+Document the SSO flow and the identity/authorization claims required by PVWA.
 
 ## Flow (high level)
 1) User accesses PVWA → redirected to IDP (SAML/OIDC)  
